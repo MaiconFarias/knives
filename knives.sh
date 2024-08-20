@@ -49,6 +49,7 @@ case $num in
         curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
         apt install unzip -y
         unzip findomain-linux.zip
+        sudo rm -rf findomain-linux.zip
         chmod +x findomain
         sudo mv findomain /usr/bin/findomain
         clear
