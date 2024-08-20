@@ -47,6 +47,7 @@ case $num in
 5)
         echo -e $verd"         F  I  N  D  O  M  A  I  N         "$fim
         curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
+        apt install unzip -y
         unzip findomain-linux.zip
         chmod +x findomain
         sudo mv findomain /usr/bin/findomain
