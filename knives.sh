@@ -127,6 +127,7 @@ case $num in
 ;;
 16)
         echo -e $azul"            G   O   S   P   I   D   E   R    "$fim
+        cd $HOME
         GO111MODULE=on go install github.com/jaeles-project/gospider@latest
         sudo mv $HOME/go/bin/gospider /usr/bin
         clear
